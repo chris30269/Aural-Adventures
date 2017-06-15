@@ -1,0 +1,62 @@
+#container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.ball{
+	/*border: 5px solid rgba(128,128,128,.2);*/
+}
+
+#topball{
+	flex: 0 1 auto;
+	background-color: red;
+	border-radius: 50%;
+	width: 35vh;
+	height: 35vh;
+	cursor: pointer;
+	position: absolute;
+	top: 10vh;
+
+	transition: top 200ms ease-out;
+}
+#middle{
+	flex: 0 1 auto;
+	z-index: 100;
+}
+#bottomball{
+	flex: 0 1 auto;
+	background-color: red;
+	border-radius: 50%;
+	width: 35vh;
+	height: 35vh;
+	cursor: pointer;
+	position: absolute;
+	bottom: 10vh;
+
+	transition: bottom 200ms ease-out;
+}
+#higher{
+	position: absolute;
+}
+#lower{
+	position: absolute;
+}
+
+#replay{
+	cursor: pointer;
+}
+
+#debug{
+	position: absolute;
+	top: 0;
+}
+
+body{
+	background-color: black;
+}
+
+p{
+	color: white;
+}
